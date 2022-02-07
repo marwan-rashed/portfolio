@@ -4,6 +4,7 @@ import {
   Text,
   Image,
   ScrollView,
+  TouchableHighlight,
 } from 'react-native';
 import { MAIN_COLOR, SECONDARY_COLOR } from '../constants';
 
@@ -80,6 +81,89 @@ const Home = () => {
 - Backend and Mobile App. Developer`}
               </Text>
           </View>
+          <View style = {{
+            width: '100%', padding: 10, marginBottom: 20,
+            borderWidth: 1, borderColor: SECONDARY_COLOR, borderRadius: 10
+          }}>
+              <Text style = {{
+                color: SECONDARY_COLOR, marginBottom: 5, marginTop: 5
+              }}>Reach me :</Text>
+          </View>
+          <TouchableHighlight
+              underlayColor = { MAIN_COLOR }
+              activeOpacity = { 1 }
+              onPress = {() => {}}
+              style = {{
+                width: '100%', flexDirection: 'row',
+                backgroundColor: SECONDARY_COLOR,
+                padding: 10, borderRadius: 10,
+                marginBottom: 10
+            }}
+          >
+              <Text style = {{
+                color: 'white', fontSize: 18
+              }}>Work Experience</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+              underlayColor = { MAIN_COLOR }
+              activeOpacity = { 1 }
+              onPress = {() => {}}
+              style = {{
+                width: '100%', flexDirection: 'row',
+                backgroundColor: SECONDARY_COLOR,
+                padding: 10, borderRadius: 10,
+                marginBottom: 10
+            }}
+          >
+              <Text style = {{
+                color: 'white', fontSize: 18
+              }}>Education</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+              underlayColor = { MAIN_COLOR }
+              activeOpacity = { 1 }
+              onPress = {() => {}}
+              style = {{
+                width: '100%', flexDirection: 'row',
+                backgroundColor: SECONDARY_COLOR,
+                padding: 10, borderRadius: 10,
+                marginBottom: 10
+            }}
+          >
+              <Text style = {{
+                color: 'white', fontSize: 18
+              }}>Projects</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+              underlayColor = { MAIN_COLOR }
+              activeOpacity = { 1 }
+              onPress = {() => {}}
+              style = {{
+                width: '100%', flexDirection: 'row',
+                backgroundColor: SECONDARY_COLOR,
+                padding: 10, borderRadius: 10,
+                marginBottom: 10
+            }}
+          >
+              <Text style = {{
+                color: 'white', fontSize: 18
+              }}>Skills</Text>
+          </TouchableHighlight>
+          <TouchableHighlight
+              underlayColor = { MAIN_COLOR }
+              activeOpacity = { 1 }
+              onPress = {() => {}}
+              style = {{
+                width: '100%', flexDirection: 'row',
+                backgroundColor: SECONDARY_COLOR,
+                padding: 10, borderRadius: 10,
+                marginBottom: 30
+            }}
+          >
+              <Text style = {{
+                color: 'white', fontSize: 18
+              }}>{'Courses & Certifications'}</Text>
+          </TouchableHighlight>
         </ScrollView>
     </View>
   );
