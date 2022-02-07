@@ -3,7 +3,7 @@ import {
   View,
   Text,
 } from 'react-native';
-import { MAIN_COLOR, SECONDARY_COLOR } from '../constants';
+import { MAIN_COLOR } from '../constants';
 
 const Welcome = ({ navigation }) => {
     useEffect(() => {
@@ -32,9 +32,9 @@ const Welcome = ({ navigation }) => {
                 justifyContent: 'flex-end', alignItems: 'center'
             }}>
                 <Text style = {{
-                    color: SECONDARY_COLOR, fontSize: 15,
+                    color: 'white', fontSize: 15,
                     marginBottom: 10
-                }}>copyrights marwan rashed 2022</Text>
+                }}>copyrights Marwan_Rashed 2022</Text>
             </View>
         </View>
     );
