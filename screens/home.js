@@ -5,6 +5,8 @@ import {
   Image,
   ScrollView,
   TouchableHighlight,
+  TouchableOpacity,
+  Linking,
 } from 'react-native';
 import { MAIN_COLOR, SECONDARY_COLOR } from '../constants';
 
@@ -121,6 +123,63 @@ const Home = ({ navigation }) => {
                   <Text style = {{
                     color: SECONDARY_COLOR, marginBottom: 5, marginTop: 5
                   }}>Reach me :</Text>
+
+                  <View style = {{
+                      width: '100%', flexDirection: 'row',
+                      alignItems: 'center',
+                  }}>
+                      <TouchableOpacity
+                        onPress = {async() => {
+                          await Linking.openURL('https://www.linkedin.com/in/marwan-rashed/');
+                        }}
+                      >
+                        <Image
+                            source = {require('../assets/linkedin.png')}
+                            style = {{
+                              width: 50, height: 50, margin: 5
+                            }}
+                        />
+                      </TouchableOpacity>
+                      
+                      <TouchableOpacity
+                        onPress = {async() => {
+                            await Linking.openURL('https://github.com/marwan-rashed');
+                        }}
+                      >
+                        <Image
+                            source = {require('../assets/github.png')}
+                            style = {{
+                              width: 50, height: 50, margin: 5
+                            }}
+                        />
+                      </TouchableOpacity>
+
+                      <TouchableOpacity
+                        onPress = {async() => {
+                          await Linking.openURL('https://twitter.com/MarwanRashed300');
+                        }}
+                      >
+                        <Image
+                            source = {require('../assets/twitter.png')}
+                            style = {{
+                              width: 50, height: 50, margin: 5
+                            }}
+                        />
+                      </TouchableOpacity>
+
+                      <TouchableOpacity
+                        onPress = {async() => {
+                          await Linking.openURL('https://www.facebook.com/marwan.rashed.97');
+                        }}
+                      >
+                        <Image
+                            source = {require('../assets/facebook.png')}
+                            style = {{
+                              width: 50, height: 50, margin: 5
+                            }}
+                        />
+                      </TouchableOpacity>
+                  </View>
               </View>
               
               {/* Touchable Sections */}
