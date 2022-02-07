@@ -71,7 +71,14 @@ const Home = () => {
             width: '100%', padding: 10, marginBottom: 20,
             borderWidth: 1, borderColor: SECONDARY_COLOR, borderRadius: 10
           }}>
-
+              <Text style = {{
+                color: SECONDARY_COLOR, marginBottom: 5, marginTop: 5
+              }}>About :</Text>
+              <Text>
+                {`- Computer Engineering Student (AIET)
+- Entry-Level Software Engineer
+- Backend and Mobile App. Developer`}
+              </Text>
           </View>
         </ScrollView>
     </View>
