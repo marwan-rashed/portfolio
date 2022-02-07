@@ -8,6 +8,26 @@ import {
 } from 'react-native';
 import { MAIN_COLOR, SECONDARY_COLOR } from '../constants';
 
+const TouchableComponent = (props) => {
+  return(
+    <TouchableHighlight
+        underlayColor = { MAIN_COLOR }
+        activeOpacity = { 1 }
+        onPress = {() => {}}
+        style = {{
+          width: '100%', flexDirection: 'row',
+          backgroundColor: SECONDARY_COLOR,
+          padding: 10, borderRadius: 10,
+          marginBottom: 10
+      }}
+    >
+        <Text style = {{
+          color: 'white', fontSize: 18
+        }}>{props.title}</Text>
+    </TouchableHighlight>
+  );
+}
+
 const Home = () => {
   return(
     <View style = {{
@@ -89,81 +109,12 @@ const Home = () => {
                 color: SECONDARY_COLOR, marginBottom: 5, marginTop: 5
               }}>Reach me :</Text>
           </View>
-          <TouchableHighlight
-              underlayColor = { MAIN_COLOR }
-              activeOpacity = { 1 }
-              onPress = {() => {}}
-              style = {{
-                width: '100%', flexDirection: 'row',
-                backgroundColor: SECONDARY_COLOR,
-                padding: 10, borderRadius: 10,
-                marginBottom: 10
-            }}
-          >
-              <Text style = {{
-                color: 'white', fontSize: 18
-              }}>Work Experience</Text>
-          </TouchableHighlight>
-          <TouchableHighlight
-              underlayColor = { MAIN_COLOR }
-              activeOpacity = { 1 }
-              onPress = {() => {}}
-              style = {{
-                width: '100%', flexDirection: 'row',
-                backgroundColor: SECONDARY_COLOR,
-                padding: 10, borderRadius: 10,
-                marginBottom: 10
-            }}
-          >
-              <Text style = {{
-                color: 'white', fontSize: 18
-              }}>Education</Text>
-          </TouchableHighlight>
-          <TouchableHighlight
-              underlayColor = { MAIN_COLOR }
-              activeOpacity = { 1 }
-              onPress = {() => {}}
-              style = {{
-                width: '100%', flexDirection: 'row',
-                backgroundColor: SECONDARY_COLOR,
-                padding: 10, borderRadius: 10,
-                marginBottom: 10
-            }}
-          >
-              <Text style = {{
-                color: 'white', fontSize: 18
-              }}>Projects</Text>
-          </TouchableHighlight>
-          <TouchableHighlight
-              underlayColor = { MAIN_COLOR }
-              activeOpacity = { 1 }
-              onPress = {() => {}}
-              style = {{
-                width: '100%', flexDirection: 'row',
-                backgroundColor: SECONDARY_COLOR,
-                padding: 10, borderRadius: 10,
-                marginBottom: 10
-            }}
-          >
-              <Text style = {{
-                color: 'white', fontSize: 18
-              }}>Skills</Text>
-          </TouchableHighlight>
-          <TouchableHighlight
-              underlayColor = { MAIN_COLOR }
-              activeOpacity = { 1 }
-              onPress = {() => {}}
-              style = {{
-                width: '100%', flexDirection: 'row',
-                backgroundColor: SECONDARY_COLOR,
-                padding: 10, borderRadius: 10,
-                marginBottom: 30
-            }}
-          >
-              <Text style = {{
-                color: 'white', fontSize: 18
-              }}>{'Courses & Certifications'}</Text>
-          </TouchableHighlight>
+          <TouchableComponent title = 'Work Experience' />
+          <TouchableComponent title = 'Education' />
+          <TouchableComponent title = 'Projects' />
+          <TouchableComponent title = 'Skills' />
+          <TouchableComponent title = {'Courses & Certifications'} />
+          <View style = {{height: 20}}/>
         </ScrollView>
     </View>
   );
