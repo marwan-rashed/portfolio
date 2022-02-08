@@ -50,7 +50,40 @@ const Skills = ({ navigation }) => {
                     padding: 20,
                 }}
             >
+                <Text style = {{
+                    color: MAIN_COLOR, fontSize: 25,
+                    alignSelf: 'flex-start', marginBottom: 5,
+                }}>Technical Skills</Text>
 
+                <View style = {{
+                    width: '100%', padding: 10, marginBottom: 20,
+                    borderWidth: 1, borderColor: SECONDARY_COLOR, borderRadius: 10,
+                }}>
+                    <Text style = {{
+                        color: SECONDARY_COLOR, fontSize: 15,
+                    }}>Backend</Text>
+                    <Text>Node.JS - Express - TypeScript</Text>
+                    <Text></Text>
+                    <Text style = {{
+                        color: SECONDARY_COLOR, fontSize: 15,
+                    }}>Mobile App Development</Text>
+                    <Text>JavaScript - React Native - Dart - Flutter</Text>
+                    <Text></Text>
+                    <Text style = {{
+                        color: SECONDARY_COLOR, fontSize: 15,
+                    }}>Database</Text>
+                    <Text>SQL - MySQL - MongoDB - FirebaseDB</Text>
+                    <Text></Text>
+                    <Text style = {{
+                        color: SECONDARY_COLOR, fontSize: 15,
+                    }}>Testing</Text>
+                    <Text>Jest - Mocha</Text>
+                    <Text></Text>
+                    <Text style = {{
+                        color: SECONDARY_COLOR, fontSize: 15,
+                    }}>Other Skills</Text>
+                    <Text>Problem Solving - Algorithms - OOP - Data Structures - Git</Text>
+                </View>
             </ScrollView>
         </View>
     );
