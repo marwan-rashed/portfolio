@@ -36,7 +36,7 @@ const Courses = ({ navigation }) => {
                     color: 'white', fontSize: 30,
                     borderBottomWidth: 1, borderBottomColor: SECONDARY_COLOR
                 }}>
-                    Courses
+                    { 'Courses & Certifications'}
                 </Text>
             </View>
             <ScrollView
@@ -50,7 +50,65 @@ const Courses = ({ navigation }) => {
                     padding: 20,
                 }}
             >
+                <Image 
+                    source = {require('../assets/APIs.png')}
+                    resizeMode = {'stretch'}
+                    style = {{
+                        width: '100%', height: 250,
+                        marginBottom: 10,
+                    }}
+                />
+                <Image 
+                    source = {require('../assets/javascript2.png')}
+                    resizeMode = {'stretch'}
+                    style = {{
+                        width: '100%', height: 250,
+                        marginBottom: 10,
+                    }}
+                />
+                <Image 
+                    source = {require('../assets/javascript.png')}
+                    resizeMode = {'stretch'}
+                    style = {{
+                        width: '100%', height: 250,
+                        marginBottom: 10,
+                    }}
+                />
+                <Image 
+                    source = {require('../assets/blockchain.png')}
+                    resizeMode = {'stretch'}
+                    style = {{
+                        width: '100%', height: 250,
+                        marginBottom: 10,
+                    }}
+                />
+                <Image 
+                    source = {require('../assets/chaincode.png')}
+                    resizeMode = {'stretch'}
+                    style = {{
+                        width: '100%', height: 250,
+                        marginBottom: 10,
+                    }}
+                />
+                <Image 
+                    source = {require('../assets/aws.png')}
+                    resizeMode = {'stretch'}
+                    style = {{
+                        width: '100%', height: 250,
+                        marginBottom: 10,
+                    }}
+                />
+                <Image 
+                    source = {require('../assets/aws2.png')}
+                    resizeMode = {'stretch'}
+                    style = {{
+                        width: '100%', height: 250,
+                        marginBottom: 10,
+                    }}
+                />
 
+                {/* Empty view as a marginBottom */}
+                <View style = {{height: 20}}/>
             </ScrollView>
         </View>
     );
