@@ -5,6 +5,7 @@ import {
   Image,
   ScrollView,
   TouchableOpacity,
+  Linking,
 } from 'react-native';
 import { MAIN_COLOR, SECONDARY_COLOR } from '../constants';
 
@@ -16,6 +17,8 @@ const Education = ({ navigation }) => {
             backgroundColor: MAIN_COLOR
           }}
         >
+
+            {/* Header */}
             <View style = {{
                 height: '15%', width: '90%',
                 justifyContent: 'space-around', alignItems: 'center'
@@ -39,6 +42,8 @@ const Education = ({ navigation }) => {
                     Education
                 </Text>
             </View>
+
+            {/* Body */}
             <ScrollView
                 contentContainerStyle = {{
                     alignItems: 'center'
@@ -50,7 +55,90 @@ const Education = ({ navigation }) => {
                     padding: 20,
                 }}
             >
+                <View style = {{
+                    width: '100%', padding: 10, marginBottom: 20,
+                    borderWidth: 1, borderColor: SECONDARY_COLOR, borderRadius: 10,
+                    flexDirection: 'row'
+                }}>
+                    <View style = {{
+                        height: '100%', width: '25%',
+                    }}>
+                        <TouchableOpacity
+                            onPress = {() => Linking.openURL('https://www.aiet.edu.eg/')}
+                        >
+                            <Image 
+                                source = {require('../assets/AIET.png')}
+                                style = {{
+                                    width: 50, height: 50, borderRadius: 25
+                                }}
+                            />
+                        </TouchableOpacity>
+                    </View>
+                    <View style = {{
+                        height: '100%', width: '75%',
+                    }}>
+                        <Text style = {{
+                            color: MAIN_COLOR,
+                            fontSize: 15
+                        }}>Alexandria Higher Institute of Engineering and Technology</Text>
+                        <Text>Alexandria, Egypt</Text>
+                        <Text></Text>
+                        <Text style = {{
+                            color: MAIN_COLOR
+                        }}>Computer Engineering Department</Text>
+                        <Text>Class of 2022</Text>
+                        <Text></Text>
+                        <Text style = {{
+                            color: MAIN_COLOR
+                        }}>Main Courses :</Text>
+                        <Text>{`- Introduction to Computer Systems (CE001)
 
+- Computer Programming (CE002)
+
+- Structured Programming & Data Structures (CE101)
+
+- Fundamentals of Logic Design (CE112)
+
+- Intro to Discrete Math (MAT271)
+
+- Advanced Algorithms (CE201)
+
+- Database Systems (CE232)
+
+- Digital System Design (CE212)
+
+- Numerical Methods (MAT361)
+
+- System Programming (CE321)
+
+- Intro to Microprocessors (CE311)
+
+- Digital Signal Processing (ECE355)
+
+- Communication Theory and Systems (ECE357)
+
+- Information Technology (CE304)
+
+- Computer Architecture (CE314)
+
+- Operating Systems (CE322)
+
+- Formal Languages (CE302)
+
+- Microprocessor Interfacing (CE312)
+
+- Intro to AI (CE433)
+
+- Software Engineering (CE401)
+
+- Applications of Real-Time Computing Systems (CE411)
+
+- Distributed Systems (CE413)`}</Text>
+                    </View>
+                </View>
+
+                {/* Empty view as a marginBottom */}
+                <View style = {{height: 20}}/>
             </ScrollView>
         </View>
     );
