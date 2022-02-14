@@ -87,16 +87,24 @@ const Home = ({ navigation }) => {
                   <Text style = {{
                     color: SECONDARY_COLOR, marginBottom: 5
                   }}>Full Name :</Text>
-                  <Text>Marwan Mohamed Mohamed Rashed</Text>
+                  <Text style = {{
+                    color: 'gray',
+                  }}>Marwan Mohamed Mohamed Rashed</Text>
                   <Text style = {{
                     color: SECONDARY_COLOR, marginBottom: 5, marginTop: 5
                   }}>Email :</Text>
-                  <Text>marwanrashed300@gmail.com</Text>
+                  <Text style = {{
+                    color: 'gray',
+                  }}>marwanrashed300@gmail.com</Text>
                   <Text style = {{
                     color: SECONDARY_COLOR, marginBottom: 5, marginTop: 5
                   }}>Mobile :</Text>
-                  <Text>+20 115 410 3808</Text>
-                  <Text>+20 114 380 4555</Text>
+                  <Text style = {{
+                    color: 'gray',
+                  }}>+20 115 410 3808</Text>
+                  <Text style = {{
+                    color: 'gray',
+                  }}>+20 114 380 4555</Text>
               </View>
 
               {/* About Section */}
@@ -107,7 +115,9 @@ const Home = ({ navigation }) => {
                   <Text style = {{
                     color: SECONDARY_COLOR, marginBottom: 5, marginTop: 5
                   }}>About :</Text>
-                  <Text>
+                  <Text style = {{
+                    color: 'gray',
+                  }}>
                     {`- Computer Engineering Student (AIET)
 - Entry-Level Software Engineer
 - Backend and Mobile App. Developer`}

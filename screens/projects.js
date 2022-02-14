@@ -63,12 +63,16 @@ const Projects = ({ navigation }) => {
                         marginBottom: 5,
                     }}>MY PORTFOLIO (Mobile)</Text>
 
-                    <Text>Mobile App. (Android) represent my portfolio including my personal data, education, work experience, projects, skills and certifications</Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>Mobile App. (Android) represent my portfolio including my personal data, education, work experience, projects, skills and certifications</Text>
 
                     <Text style = {{
                         color: SECONDARY_COLOR, marginTop: 10,
                     }}>{'Tools & Technologies'}</Text>
-                    <Text>{`- JavaScript
+                    <Text style = {{
+                        color: 'gray',
+                    }}>{`- JavaScript
 - React Native`}</Text>
                     <TouchableOpacity
                         onPress = {() => {
@@ -92,12 +96,16 @@ const Projects = ({ navigation }) => {
                         marginBottom: 5,
                     }}>Notes App (Backend)</Text>
 
-                    <Text>Simple Notes services that allows user to take notes and also user can view, edit and delete his notes at any time</Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>Simple Notes services that allows user to take notes and also user can view, edit and delete his notes at any time</Text>
 
                     <Text style = {{
                         color: SECONDARY_COLOR, marginTop: 10,
                     }}>{'Features'}</Text>
-                    <Text>{
+                    <Text style = {{
+                        color: 'gray',
+                    }}>{
 `- Create Note
 - Edit Note
 - Delete Note
@@ -106,7 +114,9 @@ const Projects = ({ navigation }) => {
                     <Text style = {{
                         color: SECONDARY_COLOR, marginTop: 10,
                     }}>{'Tools & Technologies'}</Text>
-                    <Text>{
+                    <Text style = {{
+                        color: 'gray',
+                    }}>{
 `- JavaScript
 - Node.JS
 - Express.JS
@@ -133,12 +143,16 @@ const Projects = ({ navigation }) => {
                         marginBottom: 5,
                     }}>Transactions Handling System - Graduation Project</Text>
 
-                    <Text>Design and realization of smart local transactions handling system</Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>Design and realization of smart local transactions handling system</Text>
 
                     <Text style = {{
                         color: SECONDARY_COLOR, marginTop: 10,
                     }}>{'Tools & Technologies'}</Text>
-                    <Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>
 {`- JavaScript
 - React Native
 - Node.JS

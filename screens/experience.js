@@ -82,10 +82,16 @@ const Experience = ({ navigation }) => {
                                 fontSize: 15
                             }}>Node.JS Developer - Internship</Text>
                             <Text></Text>
-                            <Text>Curawella - Meta Healthcare Software</Text>
-                            <Text>Alexandria, Egypt</Text>
+                            <Text style = {{
+                                color: 'gray',
+                            }}>Curawella - Meta Healthcare Software</Text>
+                            <Text style = {{
+                                color: 'gray',
+                            }}>Alexandria, Egypt</Text>
                             <Text></Text>
-                            <Text>Sep 2021 - Oct 2021</Text>
+                            <Text style = {{
+                                color: 'gray',
+                            }}>Sep 2021 - Oct 2021</Text>
                         </View>
                     </View>
                     
@@ -116,10 +122,16 @@ const Experience = ({ navigation }) => {
                                 fontSize: 15
                             }}>React Native Developer - Internship</Text>
                             <Text></Text>
-                            <Text>Curawella - Meta Healthcare Software</Text>
-                            <Text>Alexandria, Egypt</Text>
+                            <Text style = {{
+                                color: 'gray',
+                            }}>Curawella - Meta Healthcare Software</Text>
+                            <Text style = {{
+                                color: 'gray',
+                            }}>Alexandria, Egypt</Text>
                             <Text></Text>
-                            <Text>Jul 2019 - Oct 2019</Text>
+                            <Text style = {{
+                                color: 'gray',
+                            }}>Jul 2019 - Oct 2019</Text>
                         </View>
                     </View>
             </ScrollView>

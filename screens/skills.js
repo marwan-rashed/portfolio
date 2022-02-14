@@ -2,7 +2,6 @@ import React from 'react';
 import {
   View,
   Text,
-  Image,
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
@@ -62,27 +61,37 @@ const Skills = ({ navigation }) => {
                     <Text style = {{
                         color: SECONDARY_COLOR, fontSize: 15,
                     }}>Backend</Text>
-                    <Text>Node.JS - Express - TypeScript</Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>Node.JS - Express - TypeScript</Text>
                     <Text></Text>
                     <Text style = {{
                         color: SECONDARY_COLOR, fontSize: 15,
                     }}>Mobile App Development</Text>
-                    <Text>JavaScript - React Native - Dart - Flutter</Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>JavaScript - React Native - Dart - Flutter</Text>
                     <Text></Text>
                     <Text style = {{
                         color: SECONDARY_COLOR, fontSize: 15,
                     }}>Database</Text>
-                    <Text>SQL - MySQL - MongoDB - FirebaseDB</Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>SQL - MySQL - MongoDB - FirebaseDB</Text>
                     <Text></Text>
                     <Text style = {{
                         color: SECONDARY_COLOR, fontSize: 15,
                     }}>Testing</Text>
-                    <Text>Jest - Mocha</Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>Jest - Mocha</Text>
                     <Text></Text>
                     <Text style = {{
                         color: SECONDARY_COLOR, fontSize: 15,
                     }}>Other Skills</Text>
-                    <Text>Problem Solving - Algorithms - OOP - Data Structures - Git</Text>
+                    <Text style = {{
+                        color: 'gray',
+                    }}>Problem Solving - Algorithms - OOP - Data Structures - Git</Text>
                 </View>
             </ScrollView>
         </View>

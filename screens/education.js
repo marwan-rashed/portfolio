@@ -81,17 +81,23 @@ const Education = ({ navigation }) => {
                             color: MAIN_COLOR,
                             fontSize: 15
                         }}>Alexandria Higher Institute of Engineering and Technology</Text>
-                        <Text>Alexandria, Egypt</Text>
+                        <Text style = {{
+                            color: 'gray',
+                        }}>Alexandria, Egypt</Text>
                         <Text></Text>
                         <Text style = {{
                             color: MAIN_COLOR
                         }}>Computer Engineering Department</Text>
-                        <Text>Class of 2022</Text>
+                        <Text style = {{
+                            color: 'gray',
+                        }}>Class of 2022</Text>
                         <Text></Text>
                         <Text style = {{
                             color: MAIN_COLOR
                         }}>Main Courses :</Text>
-                        <Text>{`- Introduction to Computer Systems (CE001)
+                        <Text style = {{
+                            color: 'gray',
+                        }}>{`- Introduction to Computer Systems (CE001)
 
 - Computer Programming (CE002)
 
