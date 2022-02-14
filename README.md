@@ -2,7 +2,7 @@
 
 **My personal portfolio as a mobile app (Android)**
 
-[Download APK](https://drive.google.com/file/d/1dl8FKraSD2iJ2E_NpJVh6wP0I7wllY0F/view?usp=sharing)
+[Download APK](https://drive.google.com/file/d/1GqFREYhySStokhfPTAZYG7LyTlcRyPEA/view?usp=sharing)
 
 ### Content
 - Personal Info
