@@ -61,7 +61,7 @@ const Projects = ({ navigation }) => {
                         color: MAIN_COLOR,
                         fontSize: 15, fontWeight: 'bold',
                         marginBottom: 5,
-                    }}>MY PORTFOLIO</Text>
+                    }}>MY PORTFOLIO (Mobile)</Text>
 
                     <Text>Mobile App. (Android) represent my portfolio including my personal data, education, work experience, projects, skills and certifications</Text>
 
@@ -90,7 +90,48 @@ const Projects = ({ navigation }) => {
                         color: MAIN_COLOR,
                         fontSize: 15, fontWeight: 'bold',
                         marginBottom: 5,
-                    }}>Transactions Handling System</Text>
+                    }}>Notes App (Backend)</Text>
+
+                    <Text>Simple Notes services that allows user to take notes and also user can view, edit and delete his notes at any time</Text>
+
+                    <Text style = {{
+                        color: SECONDARY_COLOR, marginTop: 10,
+                    }}>{'Features'}</Text>
+                    <Text>{
+`- Create Note
+- Edit Note
+- Delete Note
+- Get All Notes
+- Get One Note Details`}</Text>
+                    <Text style = {{
+                        color: SECONDARY_COLOR, marginTop: 10,
+                    }}>{'Tools & Technologies'}</Text>
+                    <Text>{
+`- JavaScript
+- Node.JS
+- Express.JS
+- MongoDB`}</Text>
+                    <TouchableOpacity
+                        onPress = {() => {
+                            Linking.openURL('https://github.com/marwan-rashed/notes-app')
+                        }}
+                    >
+                        <Text style = {{
+                            color: SECONDARY_COLOR,
+                            fontStyle: 'italic', marginTop: 10
+                        }}>Source code on github</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style = {{
+                    width: '100%', padding: 10, marginBottom: 20,
+                    borderWidth: 1, borderColor: SECONDARY_COLOR, borderRadius: 10,
+                }}>
+                    <Text style = {{
+                        color: MAIN_COLOR,
+                        fontSize: 15, fontWeight: 'bold',
+                        marginBottom: 5,
+                    }}>Transactions Handling System - Graduation Project</Text>
 
                     <Text>Design and realization of smart local transactions handling system</Text>
 
@@ -106,6 +147,9 @@ const Projects = ({ navigation }) => {
 - Socket.io
 - AWS`}             </Text>
                 </View>
+
+                {/* Empty view as a marginBottom */}
+                <View style = {{height: 20}}/>
             </ScrollView>
         </View>
     );
